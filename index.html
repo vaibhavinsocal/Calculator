@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+ <link rel="stylesheet" href="C:\Users\Vaibhav Verma\Calc-AngJs\assets\css\style.css" />
+<script src="C:\Users\Vaibhav Verma\Calc-AngJs\app\components\home\home.js"></script> 
+</head>
+
+<body>
+ 
+
+<div ng-app="myApp" ng-controller="home">
+  <input name="InputBox" ng-model = "a"  ng-keyup="$event.keyCode == 107 ? addProcess()  : $event.keyCode == 109 ? subProcess() : $event.keyCode == 106 ? mulProcess() : $event.keyCode == 111 ? divProcess() : $event.keyCode "/>
+  <br>
+  <button id="plus" class="button" ng-model = "a"  ng-click = "addPlus();addProcess()" >+</button> 
+  <button id="sub" class="button" ng-model = "a"  ng-click = "addMinus();subProcess()" >-</button> 
+  <button id="mul" class="button" ng-model = "a"  ng-click = "addMultiply();mulProcess()">*</button> 
+  <button id="div" class="button" ng-model = "a" ng-click = "addDivide();divProcess()" >/</button> 
+  <br>
+  <button  class="button" ng-model="a"  ng-click="inputOne()">1</button>
+  <button  class="button" ng-model="a"  ng-click="inputTwo()">2</button>
+  <button  class="button" ng-model="a"  ng-click="inputThree()">3</button><br>
+  <button  class="button" ng-model="a"  ng-click="inputFour()">4</button>
+  <button  class="button" ng-model="a"  ng-click="inputFive()">5</button>
+  <button  class="button" ng-model="a"  ng-click="inputSix()">6</button><br>
+  <button  class="button" ng-model="a"  ng-click="inputSeven()">7</button>
+  <button  class="button" ng-model="a"  ng-click="inputEight()">8</button>
+  <button  class="button" ng-model="a"  ng-click="inputNine()">9</button><br>
+  <button  class="button" ng-model="a"  ng-click="inputZero()">0</button>
+
+  <button id ="eq"  class="button" ng-model="a" ng-click="EqualTo()">=</button>
+  
+<br>
+  Result : {{result}}<br><br><br>
+
+  A::{{b}}
+
+</div>
+
+ 
+
+</body>
+
+</html>
