@@ -137,7 +137,7 @@ app.controller('home', function($scope)
              {
              	numArray.push($scope.a);
          	 	$scope.result = Number(0);
-	     	 	
+	     	 }
             
             
          	$scope.clearInput();
@@ -242,8 +242,8 @@ app.controller('home', function($scope)
     		{
          	case '+': $scope.result = Number(numArray[0]) + Number($scope.a)  ;
          	case '-': $scope.result = Number(numArray[0]) - Number($scope.a)  ;
-         	case '/': $scope.result = Number(numArray[0]) * Number($scope.a)  ;
-            case '*': $scope.result = Number(numArray[0]) / Number($scope.a)  ;
+         	case '/': $scope.result = Number(numArray[0]) / Number($scope.a)  ;
+            case '*': $scope.result = Number(numArray[0]) * Number($scope.a)  ;
      		}
     		
     	};
@@ -252,5 +252,5 @@ app.controller('home', function($scope)
 
 }
 
-});
+);
 
